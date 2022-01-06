@@ -1,0 +1,10 @@
+function validateEmail(email) {
+    var read=/\S+@\S+\.\S+/;
+    if(read.test(email)){
+        return "Valid email address!";
+    }
+    else{
+        return "Invalid email address!";
+    }
+}
+console.log(validateEmail("info123@example.com"));
