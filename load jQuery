@@ -1,0 +1,18 @@
+//WRITE YOUR jQUERY CODE HERE
+window.onload = function() {
+    if (window.jQuery) {  
+        // jQuery is loaded  
+        document.getElementById('msg').innerHTML = "jQuery is loaded!!!";
+       } else {
+        // jQuery is not loaded
+         document.getElementById('msg').innerHTML = "jQuery is not loaded!!!";
+    }
+}
+//Write Your jQuery Code Here
+
+var n=document.getElementById("txt");
+      $('#btnId').click(function() {  
+         var res="Welcome "+n.value+"!";
+         var ele="\""+res+"\"";
+         document.getElementById("address").innerHTML=ele;
+   });
